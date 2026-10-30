@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeltaraX | Digital Assets</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <!-- Website name on the left -->
+        <a href="#dashboard" class="logo">
+            <span class="logo-icon">V</span>
+            <span>Veltara<span class="logo-highlight">X</span></span>
+        </a>
+
+        <!-- Menu button on the right -->
+        <div class="header-right">
+            <div class="demo-status">
+                <span class="status-dot"></span>
+                Live Account
+            </div>
+
+            <button class="menu-button" id="menuButton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+    </header>
+
+    <!-- SIDE NAVIGATION -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+            <h3>Navigation</h3>
+
+            <button id="closeMenu" class="close-button">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="user-profile">
+            <div class="avatar">V</div>
+
+            <div>
+                <h4>Welcome user</h4>
+                <p>live Account</p>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <a href="#dashboard" class="nav-link active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="#balance" class="nav-link">
+                <i class="fa-solid fa-wallet"></i>
+                Deposit
+            </a>
+
+            <a href="#balance" class="nav-link">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                Withdraw
+            </a>
+
+            <a href="#investment" class="nav-link">
+                <i class="fa-solid fa-chart-line"></i>
+                Investment Plans
+            </a>
+
+            <a href="#transactions" class="nav-link">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                Transactions
+            </a>
+
+            <a href="#referrals" class="nav-link">
+                <i class="fa-solid fa-users"></i>
+                Referrals
+            </a>
+
+            <a href="#profile" class="nav-link">
+                <i class="fa-solid fa-user"></i>
+                My Profile
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <i class="fa-solid fa-circle-info"></i>
+            <p>This is a live account dashboard</p>
+        </div>
+
+    </aside>
+
+    <!-- BACKGROUND OVERLAY (empty, closed straight away) -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="dashboard">
+
+        <!-- WELCOME -->
+        <section class="welcome-section">
+            <div>
+                <p class="small-heading">YOUR FINANCIAL SPACE</p>
+                <h1>Welcome back, user!</h1>
+                <p class="welcome-text">Here is an overview of your Live Account.</p>
+            </div>
+
+            <div class="date-display" id="currentDate"></div>
+        </section>
+
+        <!-- BALANCE CARD -->
+        <section class="balance-card" id="balance">
+
+            <div class="balance-top">
+                <div>
+                    <p class="card-label">TOTAL BALANCE</p>
+                    <h2 id="totalBalance">$0.00</h2>
+                </div>
+
+                <span class="account-status">
+                    <span class="status-dot"></span>
+                    Demo
+                </span>
+            </div>
+
+            <div class="balance-actions">
+                <button class="primary-button" data-action="deposit">
+                    <i class="fa-solid fa-plus"></i>
+                    Deposit
+                </button>
+
+                <button class="secondary-button" data-action="withdraw">
+                    <i class="fa-solid fa-arrow-up"></i>
+                    Withdraw
+                </button>
+            </div>
+
+            <div class="balance-details">
+                <div class="balance-item">
+                    <p>PORTFOLIO</p>
+                    <h3>$0.00</h3>
+                </div>
+
+                <div class="balance-item">
+                    <p>TOTAL PROFIT</p>
+                    <h3 class="profit">$0.00</h3>
+                </div>
+
+                <div class="balance-item">
+                    <p>BONUS</p>
+                    <h3>$0.00</h3>
+                </div>
+
+                <div class="balance-item">
+                    <p>DEPOSIT</p>
+                    <h3>$0.00</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- STATISTICS -->
+        <section class="statistics">
+
+            <div class="stat-card">
+                <div class="stat-icon green">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <p>Total Deposits</p>
+                <h2>$0.00</h2>
+                <span>Demo account</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon purple">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <p>Total Earnings</p>
+                <h2>$0.00</h2>
+                <span>Demo account</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </div>
+                <p>Total Withdrawals</p>
+                <h2>$0.00</h2>
+                <span>Demo account</span>
+            </div>
+
+        </section>
+
+        <!-- INVESTMENT PLANS -->
+        <section class="section" id="investment">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Investment Plans</h2>
+                    <p>Explore our sample investment packages.</p>
+                </div>
+
+                <a href="#investment">View all <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="plans-grid">
+
+                <div class="plan-card">
+                    <span class="plan-tag">STARTER</span>
+                    <h3>Basic Plan</h3>
+                    <h2>$100 - $499</h2>
+                    <p>Sample investment package</p>
+                    <button class="plan-button" data-action="plan">Explore Plan</button>
+                </div>
+
+                <div class="plan-card featured">
+                    <span class="plan-tag">POPULAR</span>
+                    <h3>Growth Plan</h3>
+                    <h2>$500 - $999</h2>
+                    <p>Sample investment package</p>
+                    <button class="plan-button" data-action="plan">Explore Plan</button>
+                </div>
+
+                <div class="plan-card">
+                    <span class="plan-tag">PREMIUM</span>
+                    <h3>Premium Plan</h3>
+                    <h2>$1,000+</h2>
+                    <p>Sample investment package</p>
+                    <button class="plan-button" data-action="plan">Explore Plan</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- TRANSACTIONS -->
+        <section class="section" id="transactions">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Recent Transactions</h2>
+                    <p>Keep track of your account activities.</p>
+                </div>
+
+                <a href="#transactions">View all <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="transaction-card">
+
+                <div class="transaction-header">
+                    <span>DATE</span>
+                    <span>TYPE</span>
+                    <span>AMOUNT</span>
+                    <span>STATUS</span>
+                </div>
+
+                <div id="transactionList" class="empty-transactions">
+                    <i class="fa-solid fa-receipt"></i>
+                    <p>No transactions yet</p>
+                    <span>Your demo activities will appear here.</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- REFERRAL SECTION -->
+        <section class="referral-card" id="referrals">
+
+            <div class="referral-icon">
+                <i class="fa-solid fa-users"></i>
+            </div>
+
+            <h2>Refer &amp; Connect</h2>
+
+            <p>Share your demo referral link with friends.</p>
+
+            <div class="referral-link">
+                <input
+                    type="text"
+                    id="referralLink"
+                    value="veltarax.example/ref/demo-user"
+                    readonly
+                >
+
+                <button id="copyButton">
+                    <i class="fa-regular fa-copy"></i>
+                    Copy Link
+                </button>
+            </div>
+
+        </section>
+
+        <!-- PROFILE -->
+        <section class="section profile-section" id="profile">
+
+            <h2>Account Information</h2>
+
+            <div class="profile-row">
+                <span>Account Name</span>
+                <strong>Live User</strong>
+            </div>
+
+            <div class="profile-row">
+                <span>Account Status</span>
+                <strong class="profile-active">Live</strong>
+            </div>
+
+            <div class="profile-row">
+                <span>Account Type</span>
+                <strong>Frontend Preview</strong>
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <h3>VeltaraX</h3>
+            <p>Digital Assets Dashboard</p>
+            <p>&copy; 2026 VeltaraX. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- LIVE NOTIFICATION -->
+    <div class="toast" id="toast"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
